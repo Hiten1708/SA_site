@@ -1,0 +1,41 @@
+/* TitleBar.css */
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Change the background color as needed */
+  color: white; /* Change the text color as needed */
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust z-index as needed */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left-content {
+  flex-grow: 1;
+  color: black;
+  font-size: 200%;
+  font-weight: bolder;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.right-content img {
+  max-height: 70px; /* Adjust the maximum height of the logo as needed */
+  color: black;
+  padding: 0;
+  position: relative;
+  right: 15px;
+  width: 100%;
+}
+
+@media screen and (max-width: 656px) {
+  .left-content {
+    flex-grow: 1;
+    color: black;
+    font-size: 150%;
+  }
+}

@@ -1,0 +1,30 @@
+/* HomePage.css */
+
+.home-container {
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+  padding: 2%;
+  color: #333;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  /* position: fixed; */
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
