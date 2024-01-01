@@ -1,6 +1,8 @@
 import React from 'react';
 import './Properties.css'; // Import the corresponding CSS file for styling
 import 'katex/dist/katex.min.css';
+import NavLinks from './navLinks';
+
 
 const Properties = () => {
   return (
@@ -26,6 +28,7 @@ const Properties = () => {
         <li>Possess an infinite number of conservation laws and symmetries</li>
         <li>Admit a determinant formula for multi-soliton solutions</li>
       </ul>
+      <NavLinks prePage="/Interactions" nextPage="/KdVsolitons" />
     </div>
   );
 };

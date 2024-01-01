@@ -4,6 +4,7 @@ import React from 'react';
 import './home.css'; // Import the corresponding CSS file for styling
 import Latex from 'react-latex';
 import 'katex/dist/katex.min.css';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
 
@@ -40,20 +41,20 @@ const HomePage = () => {
       <h2>Sections</h2>
 
       <ul>
-          <li><a href="http://localhost:3000/non-linear-wave-equation">Nonlinear Wave Equations</a></li>
-          <li><a href="http://localhost:3000/Interactions">Interactions of Nonlinear Dispersive Waves</a></li>
-          <li><a href="http://localhost:3000/Properties">Properties and Types of Solitons</a></li>
-          <li><a href="http://localhost:3000/KdVsolitons">KdV Solitons</a></li>
-          <li><a href="http://localhost:3000/mKdVsolitons">mKdV Solitons</a></li>
-          <li><a href="http://localhost:3000/ComplexmKdVI">Complex mKdV Solitons I (Hirota equation)</a></li>
-          <li><a href="http://localhost:3000/ComplexmKdVII">Complex mKdV Solitons II (Sasa-Satsuma equation)</a></li>
-          <li><a href="http://localhost:3000/OscillatoryI">Oscillatory Solitons I (Hirota equation)</a></li>
-          <li><a href="http://localhost:3000/OscillatoryII">Oscillatory Solitons II (Sasa-Satsuma equation)</a></li>
-          <li><a href="http://localhost:3000/BreatherI">Breather Solitons I (Hirota equation)</a></li>
-          <li><a href="http://localhost:3000/BreatherII">Breather Solitons II (Sasa-Satsuma equation)</a></li>
-          <li><a href="http://localhost:3000/VectorI">Vector-mKdV Solitons I</a></li>
-          <li><a href="http://localhost:3000/VectorII">Vector-mKdV Solitons II</a></li>
-      </ul>
+        <li><Link to="/non-linear-wave-equation" target="_blank" rel="noreferrer">Nonlinear Wave Equations</Link></li>
+        <li><Link to="/Interactions" target="_blank" rel="noreferrer">Interactions of Nonlinear Dispersive Waves</Link></li>
+        <li><Link to="/Properties" target="_blank" rel="noreferrer">Properties and Types of Solitons</Link></li>
+        <li><Link to="/KdVsolitons" target="_blank" rel="noreferrer">KdV Solitons</Link></li>
+        <li><Link to="/mKdVsolitons" target="_blank" rel="noreferrer">mKdV Solitons</Link></li>
+        <li><Link to="/ComplexmKdVI" target="_blank" rel="noreferrer">Complex mKdV Solitons I (Hirota equation)</Link></li>
+        <li><Link to="/ComplexmKdVII" target="_blank" rel="noreferrer">Complex mKdV Solitons II (Sasa-Satsuma equation)</Link></li>
+        <li><Link to="/OscillatoryI" target="_blank" rel="noreferrer">Oscillatory Solitons I (Hirota equation)</Link></li>
+        <li><Link to="/OscillatoryII" target="_blank" rel="noreferrer">Oscillatory Solitons II (Sasa-Satsuma equation)</Link></li>
+        <li><Link to="/BreatherI" target="_blank" rel="noreferrer">Breather Solitons I (Hirota equation)</Link></li>
+        <li><Link to="/BreatherII" target="_blank" rel="noreferrer">Breather Solitons II (Sasa-Satsuma equation)</Link></li>
+        <li><Link to="/VectorI" target="_blank" rel="noreferrer">Vector-mKdV Solitons I</Link></li>
+        <li><Link to="/VectorII" target="_blank" rel="noreferrer">Vector-mKdV Solitons II</Link></li>
+    </ul>
     </div>
   );
 };

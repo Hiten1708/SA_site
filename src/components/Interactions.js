@@ -2,13 +2,15 @@ import React from 'react';
 import Latex from 'react-latex';
 import 'katex/dist/katex.min.css';
 import './Interaction.css'
+import NavLinks from './navLinks';
 
 const Interactions = () => {
   
     return (
       <div className="Interactions-container">
-  
+        <hr />
         <center><h1>Generalized KdV Interactions</h1></center>
+        <hr />
         <h2>What happens when nonlinear waves interact?</h2>
         <p>
         In linear interactions of localized travelling waves, 
@@ -117,7 +119,9 @@ const Interactions = () => {
         The nonlinear interaction for the GKdV-4 solution is so strong that 
         the shorter wave appears to completely stop while the taller wave accelerates.
         </p>
+        <NavLinks prePage="/non-linear-wave-equation" nextPage="/Properties" />
       </div>
+
     );
   };
   

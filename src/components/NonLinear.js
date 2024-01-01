@@ -1,15 +1,14 @@
 import React from 'react';
 import Latex from 'react-latex';
-import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
 import 'katex/dist/katex.min.css';
 import './NonLinear.css';
+import NavLinks from './navLinks';
 
 const NonLinear = () => {
     const equation = "$$ u(x,t)= \\left( \\frac{(p+1)(p+2)c}{2} \\right)^{1/p} \\text{sech}^{2/p} \\left(  \\frac{p\\sqrt{c}(x−ct)}{2} \\right)$$"
 
 return (
     <div className='nL-container'>
-        <Link to="/" className="back-button top">Back to Home</Link>
         <center><h1>Nonlinear Wave Equations</h1></center>
         <p>There are many different nonlinear wave equations. 
         Some types of equations have solutions that display singularities or gradient blow-ups, 
@@ -95,7 +94,9 @@ return (
         <center><p>
             <img src={require('./Gifs/Nl_eq/gKdV-compare-c.gif')} alt='gKdV-compare-c.gif'></img>
         </p></center>
-        <Link to="/" className="back-button bottom">Back to Home</Link>
+
+        <NavLinks prePage="/" nextPage="/Interactions" />
+
         </div>
     );
 };

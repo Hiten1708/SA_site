@@ -1,7 +1,8 @@
 import React from 'react';
 import Latex from 'react-latex';
 import 'katex/dist/katex.min.css';
-import './mKdVsolitons.css'
+import './mKdVsolitons.css';
+import NavLinks from './navLinks';
 
 const MKdVsolitons = () => {
   
@@ -183,6 +184,7 @@ const MKdVsolitons = () => {
         <p>
         Multi-soliton solutions have the same interaction features displayed by the 2-soliton solution.
         </p>
+        <NavLinks prePage="/KdVsolitons" nextPage="/ComplexmKdVI" />
       </div>
     );
   };

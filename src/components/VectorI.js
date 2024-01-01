@@ -2,6 +2,7 @@ import React from 'react';
 import Latex from 'react-latex';
 import './VectorI.css'
 import 'katex/dist/katex.min.css';
+import NavLinks from './navLinks';
 
 const VectorI = () => {
   
@@ -172,6 +173,7 @@ const VectorI = () => {
         </center>
         <center><p>speed ratio: <Latex>{"$$ \\frac{c_1}{c_2} = 9$$"}</Latex></p></center>
         <center><p>relative orientation angle: <Latex>{"$$ \\Delta \\bm{\\phi} = \\pi$$"}</Latex></p></center>
+        <NavLinks prePage="/BreatherII" nextPage="/VectorII" />
       </div>
     );
   };

@@ -2,6 +2,7 @@ import React from 'react';
 import Latex from 'react-latex';
 import './OscillatoryII.css'
 import 'katex/dist/katex.min.css';
+import NavLinks from './navLinks';
 
 const OscillatoryII = () => {
   
@@ -76,6 +77,7 @@ const OscillatoryII = () => {
             </img>
         </p>
         </center>
+        <NavLinks prePage="/OscillatoryI" nextPage="/BreatherI" />
       </div>
     );
   };

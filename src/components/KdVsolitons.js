@@ -1,7 +1,9 @@
 import React from 'react';
 import Latex from 'react-latex';
 import 'katex/dist/katex.min.css';
-import './KdVsolitons.css'
+import './KdVsolitons.css';
+import NavLinks from './navLinks';
+import mergeSpacetime from './Gifs/KdVsolitons/spacetime_kdv_2soliton_merge-split.gif';
 
 const KdVsolitons = () => {
   
@@ -74,8 +76,7 @@ const KdVsolitons = () => {
         </center>
         <center><p>ratio of fast to slow wave speeds is <Latex>{"$$ > 3$$"}</Latex></p></center>
         <center><p>
-        <p>(Click <a href="./Gifs/KdVsolitons">
-        here</a> to see the space time portrait)</p>
+        <p>(Click <a href={mergeSpacetime} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
         <p>
         For speed ratios <Latex>{"$$ \\frac{c_1}{c_2} < 3 $$"}</Latex>, the profile has a single peak 
@@ -189,6 +190,7 @@ const KdVsolitons = () => {
         <p>
         The two slowest waves interact and eventually both are overtaken by the fastest wave.
         </p>
+        <NavLinks prePage="/Properties" nextPage="/mKdVsolitons" />
       </div>
     );
   };

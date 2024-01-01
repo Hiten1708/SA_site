@@ -2,13 +2,14 @@ import React from 'react';
 import Latex from 'react-latex';
 import './VectorII.css'
 import 'katex/dist/katex.min.css';
+import NavLinks from './navLinks';
 
 const VectorII = () => {
   
     return (
       <div className="VectorII-container">
   
-        <center><h1>Vector-MKdV Solitons I</h1></center>
+        <center><h1>Vector-MKdV Solitons II</h1></center>
         <h2>Vector MKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2>
         <p>
         In vector notation, <Latex>{"$$u = (u_1,...,u_N)$$"}</Latex> is 
@@ -192,6 +193,8 @@ const VectorII = () => {
         </center>
         <center><p>speed ratio: <Latex>{"$$ \\frac{c_1}{c_2} = 50$$"}</Latex></p></center>
         <center><p>relative orientation angle: <Latex>{"$$ \\Delta \\bm{\\phi} = 0.85\\pi$$"}</Latex></p></center>
+
+        <NavLinks prePage="/VectorI" />
       </div>
     );
   };

@@ -2,6 +2,7 @@ import React from 'react';
 import Latex from 'react-latex';
 import './ComplexmKdVII.css'
 import 'katex/dist/katex.min.css';
+import NavLinks from './navLinks';
 
 
 const ComplexmKdVII = () => {
@@ -188,6 +189,7 @@ const ComplexmKdVII = () => {
         <p>(Click <a href="./Gifs/KdVsolitons/spacetime_kdv_3soliton_case3.gif">
         here</a> to see the space time portrait)</p>
         </p></center>
+        <NavLinks prePage="/ComplexmKdVI" nextPage="/OscillatoryI" />
       </div>
     );
   };

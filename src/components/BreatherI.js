@@ -2,6 +2,7 @@ import React from 'react';
 import Latex from 'react-latex';
 import './BreatherI.css'
 import 'katex/dist/katex.min.css';
+import NavLinks from './navLinks';
 
 const BreatherI = () => {
   
@@ -65,6 +66,7 @@ const BreatherI = () => {
             </img>
         </p>
         </center>
+        <NavLinks prePage="/OscillatoryII" nextPage="/BreatherII" />
       </div>
     );
   };
