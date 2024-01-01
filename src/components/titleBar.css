@@ -15,7 +15,6 @@
 }
 
 .left-content {
-  flex-grow: 1;
   color: black;
   font-size: 200%;
   font-weight: bolder;
@@ -32,10 +31,19 @@
   width: 100%;
 }
 
-@media screen and (max-width: 656px) {
+@media screen and (max-width: 800px) {
+  .title-bar {
+    flex-wrap: nowrap;
+  }
+
   .left-content {
-    flex-grow: 1;
-    color: black;
     font-size: 150%;
+    padding: 10px;
+  }
+
+  .right-content img {
+    max-height: 50px; /* Adjust the maximum height of the logo as needed */
+    right: 0;
+    width: 80px; /* Adjust the width of the logo as needed */
   }
 }
