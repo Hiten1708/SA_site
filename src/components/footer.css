@@ -21,6 +21,17 @@
   font-weight: bold;
 }
 
+.canada-flag-img {
+  max-height: 50px; /* Adjust the maximum height of the logo as needed */
+  max-width: 50px;
+  color: black;
+  padding: 0;
+  position: relative;
+  left: 70px;
+  width: 100%;
+  margin-left: 50px; /* Add this line */
+}
+
 /* Styles for screens smaller than 768px */
 @media (max-width: 767px) {
   .footer {
@@ -28,4 +39,17 @@
     align-items: center;
     text-align: center;
   }
+
+
+  @media screen and (max-width: 800px) {
+  .canada-flag-img {
+    max-height: 50px; /* Adjust the maximum height of the logo as needed */
+    width: 80px; /* Adjust the width of the logo as needed */
+    color: black;
+    padding: 0;
+    position: relative;
+    left: -20px;
+    width: 100%;
+  }
+}
 }

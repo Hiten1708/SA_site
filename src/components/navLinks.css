@@ -39,7 +39,3 @@
   outline: none;
 }
 
-/* Style the button as a link on hover */
-.navLinks-component button:hover {
-  color: #0056b3; /* Hover color */
-}

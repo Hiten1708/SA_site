@@ -16,7 +16,7 @@ const NavLinks = ({ prePage, nextPage, prePageName, nextPageName }) => {
     </div>
       <div className='navLink-center'>
         <NavLink onClick={history(-1)} activeClassName="active">Back</NavLink>
-        <button onClick={scrollToTop} activeClassName="active">Top</button>
+        <button onClick={scrollToTop} >Top</button>
         <NavLink to="/" activeClassName="active">⌂ Home</NavLink>
       </div>
       <div className='navLink-right'>
