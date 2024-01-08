@@ -8,10 +8,10 @@ const Interactions = () => {
   
     return (
       <div className="Interactions-container">
-        <hr />
+        
         <center><h1>Generalized KdV Interactions</h1></center>
-        <hr />
-        <h2>What happens when nonlinear waves interact?</h2>
+        
+        <hr/><h2>What happens when nonlinear waves interact?</h2><hr/>
         <p>
         In linear interactions of localized travelling waves, 
         the initial wave profiles get superimposed as the waves collide and reappear as the waves move apart. 
@@ -24,7 +24,7 @@ const Interactions = () => {
         This plot depicts the linear superposition of two traveling waves
         </p>
   
-        <h2>The KdV Equation <Latex>{"$$ u_t + uu_x + u_{xxx} = 0 $$"}</Latex></h2>
+        <hr/><h2>The KdV Equation <Latex>{"$$ u_t + uu_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
         <p>
         Among all of the GKdV-p equations <Latex>{"$$ u_t + u^pu_x + u_{xxx} = 0 $$"}</Latex>, 
         the weakest nonlinearity occurs for the case <Latex>{"$$ p $$"}</Latex> = 1, which is the KdV equation.
@@ -35,7 +35,7 @@ const Interactions = () => {
         The ratio of height to width for a KdV travelling wave with speed <Latex>{"$$ c > 0 $$"}</Latex> 
         is approximately <Latex>{"$$ 3c : \\frac{2}{\\sqrt{c}} $$"}</Latex>.#####
         </p>
-        <h3>Travelling wave solutions of the KdV equation (<Latex>{"$$p = 1$$"}</Latex>)</h3>
+        <hr/><h3>Travelling wave solutions of the KdV equation (<Latex>{"$$p = 1$$"}</Latex>)</h3><hr/>
         <center><p>
             <img src={require('./Gifs/Interactions/overlay_kdv_waves.gif')} alt='overlay_kdv_waves.gif'></img>
         </p></center>
@@ -81,9 +81,9 @@ const Interactions = () => {
         Remarkably, in all collisions, the only remnant of the 
         nonlinear interaction is a shift in the positions of the two waves.
         </p>
-        <h3>
+        <hr/><h3>
         Colliding wave solutions of the GKdV-p equation for <Latex>{"$$p$$"}</Latex> = 2, 3, 4
-        </h3>
+        </h3><hr/>
         <p>
         A natural question is whether colliding wave solutions of all 
         GKdV-p equations exhibit the same interaction properties as KdV travelling waves.
@@ -119,7 +119,7 @@ const Interactions = () => {
         The nonlinear interaction for the GKdV-4 solution is so strong that 
         the shorter wave appears to completely stop while the taller wave accelerates.
         </p>
-        <NavLinks prePage="/non-linear-wave-equation" nextPage="/Properties" />
+        <NavLinks prePage="/non-linear-wave-equation" nextPage="/Properties" prePageName="Nonlinear Wave Equations" nextPageName='Properties and Types of Solitons'/>
       </div>
 
     );

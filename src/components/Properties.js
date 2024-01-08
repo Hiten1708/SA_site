@@ -15,9 +15,9 @@ const Properties = () => {
       change shape and speed or acquire tails. If instead the interaction preserves 
       the shape and speed of the initial wave profiles, such waves are called solitons.
       </p>
-      <h2>
+      <hr/><h2>
       Some Mathematical Features of Solitons
-      </h2>
+      </h2><hr/>
       <p>
       All soliton equations including the KdV and MKdV equations exhibit some remarkable mathematical features:
       </p>
@@ -28,7 +28,7 @@ const Properties = () => {
         <li>Possess an infinite number of conservation laws and symmetries</li>
         <li>Admit a determinant formula for multi-soliton solutions</li>
       </ul>
-      <NavLinks prePage="/Interactions" nextPage="/KdVsolitons" />
+      <NavLinks prePage="/Interactions" nextPage="/KdVsolitons" prePageName='Interactions of Nonlinear Dispersive Waves' nextPageName='KdV Solitons' />
     </div>
   );
 };

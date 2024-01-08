@@ -3,15 +3,21 @@ import Latex from 'react-latex';
 import 'katex/dist/katex.min.css';
 import './KdVsolitons.css';
 import NavLinks from './navLinks';
-import mergeSpacetime from './Gifs/KdVsolitons/spacetime_kdv_2soliton_merge-split.gif';
+import KdV_spacetime_merge_split from './Gifs/KdVsolitons/spacetime_kdv_2soliton_merge-split.gif';
+import KdV_spacetime_bounce_exchange from './Gifs/KdVsolitons//spacetime_kdv_2soliton_bounce-exchange.gif';
+import KdV_spacetime_3soliton_case1 from './Gifs/KdVsolitons/spacetime_kdv_3soliton_case1.gif'
+import KdV_spacetime_3soliton_case2 from './Gifs/KdVsolitons/spacetime_kdv_3soliton_case2.gif';
+import KdV_spacetime_3soliton_case3 from './Gifs/KdVsolitons/spacetime_kdv_3soliton_case3.gif';
 
 const KdVsolitons = () => {
   
     return (
       <div className="KdVsolitons-container">
   
+        
         <center><h1>KdV Solitons</h1></center>
-        <h2>KdV Equation <Latex>{"$$ u_t + \\alpha uu_x + \\beta u_{xxx} = 0 $$"}</Latex></h2>
+        
+        <hr/><h2>KdV Equation <Latex>{"$$ u_t + \\alpha uu_x + \\beta u_{xxx} = 0 $$"}</Latex></h2><hr/>
         <p>
         The coefficients <Latex>{"$$\\alpha$$"}</Latex>, <Latex>{"$$\\beta$$"}</Latex> 
         in the general form of the KdV equation can be freely changed 
@@ -21,7 +27,7 @@ const KdVsolitons = () => {
         which eliminates awkward numerical factors in the expressions for soliton solutions.
         </p>
   
-        <h2>1-Soliton Solution</h2>
+        <hr/><h2>1-Soliton Solution</h2><hr/>
         <p>
         The KdV 1-soliton solution is
         </p>
@@ -38,7 +44,7 @@ const KdVsolitons = () => {
         <p>
         The position of the wave peak at time <Latex>{"$$t$$"}</Latex> is <Latex>{"$$x = ct$$"}</Latex>.
         </p>
-        <h3>2-Soliton Solution</h3>
+        <hr/><h2>2-Soliton Solution</h2><hr/>
         <p>
         The KdV 2-soliton solution is
         </p>
@@ -76,7 +82,7 @@ const KdVsolitons = () => {
         </center>
         <center><p>ratio of fast to slow wave speeds is <Latex>{"$$ > 3$$"}</Latex></p></center>
         <center><p>
-        <p>(Click <a href={mergeSpacetime} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
+        <p>(Click <a href={KdV_spacetime_merge_split} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
         <p>
         For speed ratios <Latex>{"$$ \\frac{c_1}{c_2} < 3 $$"}</Latex>, the profile has a single peak 
@@ -94,13 +100,12 @@ const KdVsolitons = () => {
         </p>
         </center>
         <center><p>ratio of fast to slow wave speeds is <Latex>{"$$ < 3$$"}</Latex></p></center>
-        <center><p>
-        <p>(Click <a href="./Gifs/KdVsolitons/spacetime_kdv_3soliton_case3.gif">
-        here</a> to see the space time portrait)</p>
-        </p></center>
-        <h3>
+        <center>
+        <p>(Click <a href={KdV_spacetime_bounce_exchange} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
+        </center>
+        <hr/><h3>
         Overlay of 1-soliton solutions and corresponding 2-soliton solution
-        </h3>
+        </h3><hr/>
         <center>
           <p>
             <img src={require('./Gifs/KdVsolitons/overlay_kdv_merge_split.gif')} alt=''>
@@ -136,9 +141,9 @@ const KdVsolitons = () => {
         <p>
         where <Latex>{"$$ k_1 = \\sqrt{c_1} > k_2 = \\sqrt{c_2} > 0 $$"}</Latex>.
         </p>
-        <h3>
+        <hr/><h2>
         Multi-soliton Collisions
-        </h3>
+        </h2><hr/>
         <p>
         Multi-soliton solutions have the same interaction features displayed by the 2-soliton solution.
         </p>
@@ -152,8 +157,7 @@ const KdVsolitons = () => {
         </p>
         </center>
         <center><p>
-        <p>(Click <a href="./Gifs/KdVsolitons/spacetime_kdv_3soliton_case3.gif">
-        here</a> to see the space time portrait)</p>
+        <p>(Click <a href={KdV_spacetime_3soliton_case1} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
         <p>
         All three waves collide at <Latex>{"$$ x = 0 $$"}</Latex>, <Latex>{"$$ t = 0 $$"}</Latex>.
@@ -168,8 +172,7 @@ const KdVsolitons = () => {
         </p>
         </center>
         <center><p>
-        <p>(Click <a href="./Gifs/KdVsolitons/spacetime_kdv_3soliton_case3.gif">
-        here</a> to see the space time portrait)</p>
+        <p>(Click <a href={KdV_spacetime_3soliton_case2} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
         <p>
         The two fastest waves interact first and then overtake the slowest wave.
@@ -184,13 +187,12 @@ const KdVsolitons = () => {
         </p>
         </center>
         <center><p>
-        <p>(Click <a href="./Gifs/KdVsolitons/spacetime_kdv_3soliton_case3.gif">
-        here</a> to see the space time portrait)</p>
+        <p>(Click <a href={KdV_spacetime_3soliton_case3} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
         <p>
         The two slowest waves interact and eventually both are overtaken by the fastest wave.
         </p>
-        <NavLinks prePage="/Properties" nextPage="/mKdVsolitons" />
+        <NavLinks prePage="/Properties" nextPage="/mKdVsolitons" prePageName="Properties and Types of Solitons" nextPageName='mKdV solitons'/>
       </div>
     );
   };

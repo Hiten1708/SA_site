@@ -9,14 +9,16 @@ const NonLinear = () => {
 
 return (
     <div className='nL-container'>
+        
         <center><h1>Nonlinear Wave Equations</h1></center>
-        <p>There are many different nonlinear wave equations. 
-        Some types of equations have solutions that display singularities or gradient blow-ups, 
-        while other types of equations have smooth dispersive solutions 
-        (decaying in time and space) or, in some cases, stable traveling wave solutions.
-        </p>
+        
+            <p>There are many different nonlinear wave equations. 
+            Some types of equations have solutions that display singularities or gradient blow-ups, 
+            while other types of equations have smooth dispersive solutions 
+            (decaying in time and space) or, in some cases, stable traveling wave solutions.
+            </p>
 
-          <h2>The Convective Wave Equation</h2>
+            <hr/><hr/><h2>The Convective Wave Equation</h2><hr/><hr/>
          <p>
              The general form of the convective wave equation is <Latex>{"$$ u_t + c(u)u_x = 0 $$"}</Latex> where <Latex>{"$$ c'(u)$$"}</Latex> 
              is the wave speed given by a function of the wave amplitude u. 
@@ -42,7 +44,7 @@ return (
              Stable traveling waves with localized profiles 
              (having rapid spatial decay) are called solitary waves.
         </p>
-        <h2>The Dispersive Wave Equation</h2>
+        <hr/><h2>The Dispersive Wave Equation</h2><hr/>
         <p>
             Can dispersion balance nonlinearity? The simplest dispersive wave equation is
         </p>
@@ -60,7 +62,7 @@ return (
         <center><p>
             <img src={require('./Gifs/Nl_eq/dispersive-soln.gif')} alt='dispersive-soln.gif'></img>
         </p></center>
-        <h2>Nonlinearity and Dispersion</h2>
+        <hr/><h2>Nonlinearity and Dispersion</h2><hr/>
         <p>
             The physical feature of balancing dispersion against nonlinearity leads to solitary wave solutions. 
             Adding the dispersive term to term <Latex>{"$$ u_{xxx} $$"}</Latex> 
@@ -95,7 +97,7 @@ return (
             <img src={require('./Gifs/Nl_eq/gKdV-compare-c.gif')} alt='gKdV-compare-c.gif'></img>
         </p></center>
 
-        <NavLinks prePage="/" nextPage="/Interactions" />
+        <NavLinks prePage="/" nextPage="/Interactions" prePageName="Index" nextPageName='Interactions of Nonlinear Dispersive Waves'/>
 
         </div>
     );

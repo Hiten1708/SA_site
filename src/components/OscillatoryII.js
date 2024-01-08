@@ -10,10 +10,10 @@ const OscillatoryII = () => {
       <div className="OscillatoryII-container">
   
         <center><h1>Oscillatory Solitons</h1></center>
-        <h2>Sasa-Satsuma-mKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2>
+        <hr/><h2>Sasa-Satsuma-mKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
         
         
-        <h3>One-Soliton</h3>
+        <hr/><h2>One-Soliton</h2><hr/>
         <center>
           <p>
             <img src={require('./Gifs/Oscillatory2/ss-one-soliton-anim.gif')} alt=''>
@@ -27,9 +27,9 @@ const OscillatoryII = () => {
         </p>
         </center>
 
-       <h3>
+        <hr/><h2>
        Two-Soliton
-       </h3>
+       </h2><hr/>
         
         <center><h3>
         Right-Overtake
@@ -77,7 +77,7 @@ const OscillatoryII = () => {
             </img>
         </p>
         </center>
-        <NavLinks prePage="/OscillatoryI" nextPage="/BreatherI" />
+        <NavLinks prePage="/OscillatoryI" nextPage="/BreatherI" prePageName='Oscillatory Solitons I' nextPageName='Breather Solitons I' />
       </div>
     );
   };

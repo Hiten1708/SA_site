@@ -8,12 +8,13 @@ const OscillatoryI = () => {
   
     return (
       <div className="OscillatoryI-container">
-  
+        
         <center><h1>Oscillatory Solitons</h1></center>
-        <h2>Hirota-mKdV Equation <Latex>{"$$ u_t + 24|u|^2u_x + u_{xxx} = 0 $$"}</Latex></h2>
+        
+        <hr/><h2>Hirota-mKdV Equation <Latex>{"$$ u_t + 24|u|^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
         
         
-        <h3>One-Soliton</h3>
+        <hr/><h2>One-Soliton</h2><hr/>
         <center>
           <p>
             <img src={require('./Gifs/Oscillatory1/hirota-one-soliton-anim.gif')} alt=''>
@@ -27,9 +28,9 @@ const OscillatoryI = () => {
         </p>
         </center>
 
-       <h3>
+        <hr/><h2>
        Two-Soliton
-       </h3>
+       </h2><hr/>
         
         <center><h3>
         Right-Overtake
@@ -77,7 +78,7 @@ const OscillatoryI = () => {
             </img>
         </p>
         </center>
-        <NavLinks prePage="/ComplexmKdVII" nextPage="/OscillatoryII" />
+        <NavLinks prePage="/ComplexmKdVII" nextPage="/OscillatoryII" prePageName='Sasa-Satsuma Solitons' nextPageName=' Oscillatory Solitons II' />
       </div>
     );
   };

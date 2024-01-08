@@ -2,15 +2,19 @@ import React from 'react';
 import Latex from 'react-latex';
 import 'katex/dist/katex.min.css';
 import './mKdVsolitons.css';
+import mKdV_space_time_psi0_merge from './Gifs/mKdVsolitons/space_time_psi0_merge.jpg'
+import mKdV_space_time_psi0_bounce from './Gifs/mKdVsolitons/space_time_psi0_bounce.jpg'
+import mKdV_space_time_psipi from './Gifs/mKdVsolitons/space_time_psipi.jpg'
 import NavLinks from './navLinks';
 
 const MKdVsolitons = () => {
   
     return (
       <div className="mKdVsolitons-container">
-  
+        
         <center><h1>mKdV Solitons</h1></center>
-        <h2>Modified KdV Equation <Latex>{"$$ u_t + 24u^2u_x + u_{xxx} = 0 $$"}</Latex></h2>
+        
+        <hr/><h2>Modified KdV Equation <Latex>{"$$ u_t + 24u^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
         <p>
         Travelling wave solutions of the general mKdV equation 
         <Latex>{"$$ u_t + \\alpha u^2u_x + \\beta u_{xxx} = 0 $$"}</Latex> are non-singular 
@@ -29,7 +33,7 @@ const MKdVsolitons = () => {
             only by a reflection (i.e. an overall <Latex>{"$$ \\pm $$"}</Latex> sign).
         </p>
   
-        <h2>1-Soliton Solution</h2>
+        <hr/><h2>1-Soliton Solution</h2><hr/>
         <p>
         The mKdV 1-soliton solution is
         </p>
@@ -94,8 +98,7 @@ const MKdVsolitons = () => {
         </center>
         <center><p>ratio of fast to slow wave speeds is <Latex>{"$$ > \\frac{7+3\\sqrt{5}}{2} \\cong 6.85$$"}</Latex></p></center>
         <center><p>
-        <p>(Click <a href="./Gifs/KdVsolitons/spacetime_kdv_3soliton_case3.gif">
-        here</a> to see the space time portrait)</p>
+        <p>(Click <a href={mKdV_space_time_psi0_merge} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
         <p>
         If instead the speed ratio is <Latex>{" $$ \\frac{c_1}{c_2} < \\frac{7+3\\sqrt{5}}{2} $$"}</Latex>, the waves interact nonlinearly 
@@ -114,8 +117,7 @@ const MKdVsolitons = () => {
         </center>
         <center><p>ratio of fast to slow wave speeds is <Latex>{"$$ < \\frac{7+3\\sqrt{5}}{2} \\cong 6.85$$"}</Latex></p></center>
         <center><p>
-        <p>(Click <a href="./Gifs/KdVsolitons/spacetime_kdv_3soliton_case3.gif">
-        here</a> to see the space time portrait)</p>
+        <p>(Click <a href={mKdV_space_time_psi0_bounce} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
         <p>
         In contrast when the two waves have opposite orientations <Latex>{"$$ s_1 = -s_2 = \\pm 1 $$"}</Latex>, 
@@ -134,12 +136,11 @@ const MKdVsolitons = () => {
         </p>
         </center>
         <center><p>
-        <p>(Click <a href="./Gifs/mKdVsolitons/spacetime_kdv_3soliton_case3.gif">
-        here</a> to see the space time portrait)</p>
+        <p>(Click <a href={mKdV_space_time_psipi} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
-        <h3>
+        <hr/><h3>
         Overlay of 1-soliton solutions and corresponding 2-soliton solution
-        </h3>
+        </h3><hr/>
         <center>
           <p>
             <img src={require('./Gifs/mKdVsolitons/2D_overlay_merge.gif')} alt=''>
@@ -178,13 +179,13 @@ const MKdVsolitons = () => {
         where <Latex>{"$$ \\sqrt{c_1} > \\sqrt{c_2} > 0 $$"}</Latex>. 
         These position shifts are the same as those for the KdV 2-soliton solution.
         </p>
-        <h3>
+        <hr/><h2>
         Multi-soliton Collisions
-        </h3>
+        </h2><hr/>
         <p>
         Multi-soliton solutions have the same interaction features displayed by the 2-soliton solution.
         </p>
-        <NavLinks prePage="/KdVsolitons" nextPage="/ComplexmKdVI" />
+        <NavLinks prePage="/KdVsolitons" nextPage="/ComplexmKdVI" prePageName='KdV Solitons' nextPageName='Hirota Solitons'/>
       </div>
     );
   };

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import "./navLinks.css"
 
-const NavLinks = ({ prePage, nextPage }) => {
+const NavLinks = ({ prePage, nextPage, prePageName, nextPageName }) => {
   const history = useNavigate();
 
   const scrollToTop = () => {
@@ -11,16 +11,16 @@ const NavLinks = ({ prePage, nextPage }) => {
 
   return (
     <div className='navLinks-component'>
-      <div className='navLink-left'>
-        {prePage ? <Link to={prePage}>Previous Page</Link> : <span style={{ color: '#f8f9fa' }}>Previous Page</span>}
-      </div>
+    <div className='navLink-left'>
+      {prePage ? <span>Previous: <NavLink to={prePage} activeClassName="active">{prePageName}</NavLink></span> : <span style={{ color: '#f8f9fa' }}>Previous page: {prePageName}</span>}
+    </div>
       <div className='navLink-center'>
-        <Link onClick={history(-1)}>Back</Link>
-        <button onClick={scrollToTop}>Top</button>
-        <Link to="/">⌂ Home</Link>
+        <NavLink onClick={history(-1)} activeClassName="active">Back</NavLink>
+        <button onClick={scrollToTop} activeClassName="active">Top</button>
+        <NavLink to="/" activeClassName="active">⌂ Home</NavLink>
       </div>
       <div className='navLink-right'>
-        {nextPage ? <Link to={nextPage}>Next Page</Link> : <span style={{ color: '#f8f9fa' }}>Next Page</span>}
+        {nextPage && <span>Next: <NavLink to={nextPage} activeClassName="active">{nextPageName}</NavLink></span>}
       </div>
     </div>
   );

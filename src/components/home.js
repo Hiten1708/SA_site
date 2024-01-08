@@ -12,9 +12,10 @@ const HomePage = () => {
 
   return (
     <div className="home-container">
-
+      
       <center><h1>Solitons & Nonlinear Wave Equations</h1></center>
-      <h2>Introduction</h2>
+      
+      <hr/><h2>Introduction</h2><hr/>
       <p>
         Solitons are stable nonlinear travelling waves that retain their shape and speed in interactions. 
         First discovered empirically in the 1800's from observations of waves made by canal boats, 
@@ -38,7 +39,7 @@ const HomePage = () => {
           Hamiltonian structures and Poisson brackets, zero curvature connections in differential geometry, and much more.</li>
       </ul>
 
-      <h2>Sections</h2>
+      <hr/><h2>Sections</h2><hr/>
 
       <ul>
         <li><Link to="/non-linear-wave-equation" target="_blank" rel="noreferrer">Nonlinear Wave Equations</Link></li>

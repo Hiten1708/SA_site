@@ -10,7 +10,7 @@ const VectorII = () => {
       <div className="VectorII-container">
   
         <center><h1>Vector-MKdV Solitons II</h1></center>
-        <h2>Vector MKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2>
+        <hr/><h2>Vector MKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
         <p>
         In vector notation, <Latex>{"$$u = (u_1,...,u_N)$$"}</Latex> is 
         a <Latex>{"$$N$$"}</Latex>-component variable satisfying the vector MKdV equation
@@ -24,7 +24,7 @@ const VectorII = () => {
         <p>
         in complex-variable notation <Latex>{"$$u = u_1 +iu_2$$"}</Latex>.
         </p>
-        <h2>1-Soliton Solution</h2>
+        <hr/><h2>1-Soliton Solution</h2><hr/>
         <p>
         Travelling waves are given by the 1-soliton solution
         </p>
@@ -42,7 +42,7 @@ const VectorII = () => {
          and <Latex>{"$$ \\xi = x - ct $$"}</Latex> is a moving coordinate.
         </p>
         
-        <h3>2-Soliton Solution</h3>
+        <hr/><h3>2-Soliton Solution</h3><hr/>
         <p>
         Collisions where a fast travelling wave with speed <Latex>{" $$ c_1 $$"}</Latex> 
         and orientation (unit vector) <Latex>{" $$ \\bm{\\phi}_1 $$"}</Latex> overtakes a 
@@ -78,9 +78,9 @@ const VectorII = () => {
         where <Latex>{"$$ \\xi_1 = x - c_1 t $$"}</Latex>, <Latex>{"$$ \\xi_2 = x - c_2 t $$"}</Latex> are moving coordinates.
         </p>
 
-        <h3>
+        <hr/><h3>
         Interaction Properties
-        </h3>
+        </h3><hr/>
         <p>
         Depending on their speed ratio <Latex>{" $$ \\frac{c_1}{c_2} $$"}</Latex> and relative orientation 
         angle <Latex>{" $$ \\Delta \\bm{\\phi} = \\arccos(\\bm{\\phi}_1 \\cdot \\bm{\\phi}_2) $$"}</Latex>, 
@@ -138,13 +138,13 @@ const VectorII = () => {
         <p>
         where these rotations depend on the speeds and relative orientation of the waves.
         </p>
-       <h3>
+        <hr/><h3>
        Overlay of 1-Soliton Solutions and Corresponding 2-Soliton Solution
-       </h3>
+       </h3><hr/>
         
-        <h3>
+        <center><h3>
         Merge-Split Interaction
-        </h3>
+        </h3></center>
         <center>
           <p>
             <img src={require('./Gifs/Vector2/sasa_satsuma_3d_r3_dphi06_merge.gif')} alt=''>
@@ -194,7 +194,7 @@ const VectorII = () => {
         <center><p>speed ratio: <Latex>{"$$ \\frac{c_1}{c_2} = 50$$"}</Latex></p></center>
         <center><p>relative orientation angle: <Latex>{"$$ \\Delta \\bm{\\phi} = 0.85\\pi$$"}</Latex></p></center>
 
-        <NavLinks prePage="/VectorI" />
+        <NavLinks prePage="/VectorI" prePageName='Vector-mKdV Solitons I' />
       </div>
     );
   };
