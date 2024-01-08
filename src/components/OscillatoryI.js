@@ -12,9 +12,9 @@ const OscillatoryI = () => {
         <center><h1>Oscillatory Solitons</h1></center>
         
         <hr/><h2>Hirota-mKdV Equation <Latex>{"$$ u_t + 24|u|^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
+        <br/>
         
-        
-        <hr/><h2>One-Soliton</h2><hr/>
+        <hr color='red'/><h2>One-Soliton</h2><hr/>
         <center>
           <p>
             <img src={require('./Gifs/Oscillatory1/hirota-one-soliton-anim.gif')} alt=''>

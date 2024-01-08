@@ -109,7 +109,7 @@ const Interactions = () => {
         </center>
         <center><h4>GKdV-4</h4>
           <p>
-            <img src={require('./Gifs/Interactions/GKdV-4_collision_overlay.gif')} alt=''>
+            <img src={require('./Gifs/Interactions/GKdV-4_collision_overlay.gif')} alt='' className='image'>
             </img>
         </p>
         </center>
