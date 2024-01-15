@@ -11,20 +11,20 @@ const Interactions = () => {
         
         <center><h1>Generalized KdV Interactions</h1></center>
         
-        <hr/><h2>What happens when nonlinear waves interact?</h2><hr/>
+        <hr color='red'/><h2>What happens when nonlinear waves interact?</h2><hr color='red'/>
         <p>
         In linear interactions of localized travelling waves, 
         the initial wave profiles get superimposed as the waves collide and reappear as the waves move apart. 
         Does the GKdV equation exhibit similar behavior for colliding waves?
         </p>
         <center><p>
-            <img src={require('./Gifs/Interactions/linear_superposition_kdv_waves.gif')} alt='linear_superposition_kdv_waves.gif'></img>
+            <img src={require('./Gifs/Interactions/linear_superposition_kdv_waves.gif')} alt='linear_superposition_kdv_waves.gif'className='image'></img>
         </p></center>
         <p>
         This plot depicts the linear superposition of two traveling waves
         </p>
   
-        <hr/><h2>The KdV Equation <Latex>{"$$ u_t + uu_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
+        <hr color='red'/><h2>The KdV Equation <Latex>{"$$ u_t + uu_x + u_{xxx} = 0 $$"}</Latex></h2><hr color='red'/>
         <p>
         Among all of the GKdV-p equations <Latex>{"$$ u_t + u^pu_x + u_{xxx} = 0 $$"}</Latex>, 
         the weakest nonlinearity occurs for the case <Latex>{"$$ p $$"}</Latex> = 1, which is the KdV equation.
@@ -37,7 +37,7 @@ const Interactions = () => {
         </p>
         <hr/><h3>Travelling wave solutions of the KdV equation (<Latex>{"$$p = 1$$"}</Latex>)</h3><hr/>
         <center><p>
-            <img src={require('./Gifs/Interactions/overlay_kdv_waves.gif')} alt='overlay_kdv_waves.gif'></img>
+            <img src={require('./Gifs/Interactions/overlay_kdv_waves.gif')} alt='overlay_kdv_waves.gif'className='image'></img>
         </p></center>
         <p>
         This plot depicts the overlay of two travelling waves with speeds <Latex>{"$$c1 > c2$$"}</Latex>.
@@ -56,21 +56,21 @@ const Interactions = () => {
         In contrast, when the speed ratio is <Latex>{"$$\\frac{c1}{c2} < 3$$"}</Latex>, 
         the waves bounce and exchange both their shape and speed.
         </p>
-        <h3>
+        <hr/><h3>
         KdV (<Latex>{"$$ p =1 $$"}</Latex>) colliding wave solution with speed ratio <Latex>{"$$ \\frac{c1}{c2} > 3 $$"}</Latex>
-        </h3>
+        </h3><hr/>
         <center><p>
-            <img src={require('./Gifs/Interactions/kdv-merge-split.gif')} alt='kdv-merge-split.gif'></img>
+            <img src={require('./Gifs/Interactions/kdv-merge-split.gif')} alt='kdv-merge-split.gif'className='image'></img>
         </p></center>
         <p>
         This plot depicts the 'merge-split' type of interaction.
         </p>
-        <h3>
+        <hr/><h3>
         KdV (<Latex>{"$$ p =1 $$"}</Latex>) colliding wave solution with speed ratio <Latex>{"$$ \\frac{c1}{c2} < 3 $$"}</Latex>   
-        </h3>
+        </h3><hr/>
         <center>
           <p>
-            <img src={require('./Gifs/Interactions/kdv-bounce-exchange.gif')} alt='kdv-bounce-exchange.gif'>
+            <img src={require('./Gifs/Interactions/kdv-bounce-exchange.gif')} alt='kdv-bounce-exchange.gif'className='image'>
             </img>
         </p>
         </center>
@@ -81,9 +81,9 @@ const Interactions = () => {
         Remarkably, in all collisions, the only remnant of the 
         nonlinear interaction is a shift in the positions of the two waves.
         </p>
-        <hr/><h3>
+        <hr color='red'/><h3>
         Colliding wave solutions of the GKdV-p equation for <Latex>{"$$p$$"}</Latex> = 2, 3, 4
-        </h3><hr/>
+        </h3><hr color='red'/>
         <p>
         A natural question is whether colliding wave solutions of all 
         GKdV-p equations exhibit the same interaction properties as KdV travelling waves.
@@ -96,14 +96,14 @@ const Interactions = () => {
         
         <center><h4>MKdV(<Latex>{"$$p$$"}</Latex>=2)</h4>
           <p>
-            <img src={require('./Gifs/Interactions/GKdV-2_collision_overlay.gif')} alt=''>
+            <img src={require('./Gifs/Interactions/GKdV-2_collision_overlay.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
         
         <center><h4>GKdV-3</h4>
           <p>
-            <img src={require('./Gifs/Interactions/GKdV-3_collision_overlay.gif')} alt=''>
+            <img src={require('./Gifs/Interactions/GKdV-3_collision_overlay.gif')} alt=''className='image'>
             </img>
         </p>
         </center>

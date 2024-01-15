@@ -17,7 +17,7 @@ const KdVsolitons = () => {
         
         <center><h1>KdV Solitons</h1></center>
         
-        <hr/><h2>KdV Equation <Latex>{"$$ u_t + \\alpha uu_x + \\beta u_{xxx} = 0 $$"}</Latex></h2><hr/>
+        <hr color='red'/><h2>KdV Equation <Latex>{"$$ u_t + \\alpha uu_x + \\beta u_{xxx} = 0 $$"}</Latex></h2><hr color='red'/>
         <p>
         The coefficients <Latex>{"$$\\alpha$$"}</Latex>, <Latex>{"$$\\beta$$"}</Latex> 
         in the general form of the KdV equation can be freely changed 
@@ -37,7 +37,7 @@ const KdVsolitons = () => {
         </p>
         <center>
           <p>
-            <img src={require('./Gifs/KdVsolitons/kdv_1soliton.gif')} alt=''>
+            <img src={require('./Gifs/KdVsolitons/kdv_1soliton.gif')} alt='' className='image'>
             </img>
         </p>
         </center>
@@ -76,7 +76,7 @@ const KdVsolitons = () => {
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/KdVsolitons/kdv-merge-split.gif')} alt=''>
+            <img src={require('./Gifs/KdVsolitons/kdv-merge-split.gif')} alt='' className='image'>
             </img>
         </p>
         </center>
@@ -95,7 +95,7 @@ const KdVsolitons = () => {
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/KdVsolitons/kdv-bounce-exchange.gif')} alt=''>
+            <img src={require('./Gifs/KdVsolitons/kdv-bounce-exchange.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -108,7 +108,7 @@ const KdVsolitons = () => {
         </h3><hr/>
         <center>
           <p>
-            <img src={require('./Gifs/KdVsolitons/overlay_kdv_merge_split.gif')} alt=''>
+            <img src={require('./Gifs/KdVsolitons/overlay_kdv_merge_split.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -117,7 +117,7 @@ const KdVsolitons = () => {
         </p></center>
         <center>
           <p>
-            <img src={require('./Gifs/KdVsolitons/overlay_kdv_bounce_exchange.gif')} alt=''>
+            <img src={require('./Gifs/KdVsolitons/overlay_kdv_bounce_exchange.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -152,7 +152,7 @@ const KdVsolitons = () => {
         </h3>
         <center>
           <p>
-            <img src={require('./Gifs/KdVsolitons/kdv_3soliton_case1.gif')} alt=''>
+            <img src={require('./Gifs/KdVsolitons/kdv_3soliton_case1.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -167,7 +167,7 @@ const KdVsolitons = () => {
         </h3>
         <center>
           <p>
-            <img src={require('./Gifs/KdVsolitons/kdv_3soliton_case2.gif')} alt=''>
+            <img src={require('./Gifs/KdVsolitons/kdv_3soliton_case2.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -182,7 +182,7 @@ const KdVsolitons = () => {
         </h3>
         <center>
           <p>
-            <img src={require('./Gifs/KdVsolitons/kdv_3soliton_case3.gif')} alt=''>
+            <img src={require('./Gifs/KdVsolitons/kdv_3soliton_case3.gif')} alt=''className='image'>
             </img>
         </p>
         </center>

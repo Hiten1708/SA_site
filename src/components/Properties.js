@@ -15,9 +15,9 @@ const Properties = () => {
       change shape and speed or acquire tails. If instead the interaction preserves 
       the shape and speed of the initial wave profiles, such waves are called solitons.
       </p>
-      <hr/><h2>
+      <hr color='red'/><h2>
       Some Mathematical Features of Solitons
-      </h2><hr/>
+      </h2><hr color='red'/>
       <p>
       All soliton equations including the KdV and MKdV equations exhibit some remarkable mathematical features:
       </p>

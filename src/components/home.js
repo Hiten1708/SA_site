@@ -5,6 +5,7 @@ import './home.css'; // Import the corresponding CSS file for styling
 import Latex from 'react-latex';
 import 'katex/dist/katex.min.css';
 import { Link } from 'react-router-dom';
+import NavLinks from './navLinks';
 
 const HomePage = () => {
 
@@ -15,7 +16,7 @@ const HomePage = () => {
       
       <center><h1>Solitons & Nonlinear Wave Equations</h1></center>
       
-      <hr/><h2>Introduction</h2><hr/>
+      <hr color='red'/><h2>Introduction</h2><hr color='red'/>
       <p>
         Solitons are stable nonlinear travelling waves that retain their shape and speed in interactions. 
         First discovered empirically in the 1800's from observations of waves made by canal boats, 
@@ -39,8 +40,8 @@ const HomePage = () => {
           Hamiltonian structures and Poisson brackets, zero curvature connections in differential geometry, and much more.</li>
       </ul>
 
-      <hr/><h2>Sections</h2><hr/>
-
+      <hr color='red'/><h2>Sections</h2><hr color='red'/>
+      <br/>
       <ul>
         <li><Link to="/non-linear-wave-equation" target="_blank" rel="noreferrer">Nonlinear Wave Equations</Link></li>
         <li><Link to="/Interactions" target="_blank" rel="noreferrer">Interactions of Nonlinear Dispersive Waves</Link></li>
@@ -56,6 +57,7 @@ const HomePage = () => {
         <li><Link to="/VectorI" target="_blank" rel="noreferrer">Vector-mKdV Solitons I</Link></li>
         <li><Link to="/VectorII" target="_blank" rel="noreferrer">Vector-mKdV Solitons II</Link></li>
     </ul>
+    <NavLinks nextPage="/non-linear-wave-equation" nextPageName='Nonlinear Wave Equations'/>
     </div>
   );
 };

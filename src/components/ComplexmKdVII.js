@@ -19,7 +19,7 @@ const ComplexmKdVII = () => {
 
         <center><h1>Sasa-Satsuma Solitons</h1></center>
         
-        <hr/><h2>Sasa-Satsuma-mKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
+        <hr color='red'/><h2>Sasa-Satsuma-mKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2><hr color='red'/>
         <p>
         There are two equivalent forms for the Sasa-Satsuma-mKdV equation:
         </p>
@@ -31,7 +31,7 @@ const ComplexmKdVII = () => {
         (2) In vector notation, u = (u1, u2) satisfies
         </p>
         <center><Latex>{"$$u_t + 12 ((u \\cdot u) u_x + (u \\cdot u_x) u ) + u_{xxx} =0$$"}</Latex></center>
-        <h2>Travelling Wave Solution</h2>
+        <hr/><h2>Travelling Wave Solution</h2><hr/>
         <p>
         Travelling waves are given by the special soliton solution
         </p>
@@ -42,7 +42,7 @@ const ComplexmKdVII = () => {
         </p>
         <center>
           <p>
-            <img src={require('./Gifs/Complex2/sasa_satsuma_2d_1_soliton.gif')} alt=''>
+            <img src={require('./Gifs/Complex2/sasa_satsuma_2d_1_soliton.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -55,7 +55,7 @@ const ComplexmKdVII = () => {
         </p>
         <center>
             <Latex>
-                {"$$u(t,x)= \\frac{ (c_1 - c_2)^2(\\sqrt {\\sigma} /2) \\left(\\sqrt{c}_1 \\exp(i\\phi_1) \\left( \\exp(iv_1 + \\sqrt{c}_2 \\xi_2) + exp(-\\sqrt{c}_2 \\xi_2) \\right) + \\sqrt{c}_2 \\exp(i\\phi_2) \\left( \\exp(iv_2 - \\sqrt{c}_1 \\xi_1) + exp(\\sqrt{c}_1 \\xi_1) \\right)\\right)}{\\left(4\\sqrt{c}_1\\sqrt{c}_2\\cos(\\phi_1-phi_2)+(\\sqrt{c}_1-\\sqrt{c}_2)^2\\cosh(\\sqrt{c}_1\\xi_1+\\sqrt{c}_2\\xi_2)+(\\sqrt{c}_1+\\sqrt{c}_2)^2 \\sigma \\cosh(\\sqrt{c}_1\\xi_1-\\sqrt{c}_2\\xi_2)\\right)} $$"}
+                {"$$u(t,x)= \\frac{ (c_1 - c_2)^2(\\sqrt {\\sigma} /2) \\left(\\sqrt{c}_1 \\exp(i\\phi_1) \\left( \\exp(iv_1 + \\sqrt{c}_2 \\xi_2) + exp(-\\sqrt{c}_2 \\xi_2) \\right) + \\sqrt{c}_2 \\exp(i\\phi_2) \\left( \\exp(iv_2 - \\sqrt{c}_1 \\xi_1) + exp(\\sqrt{c}_1 \\xi_1) \\right)\\right)}{\\left(4\\sqrt{c}_1\\sqrt{c}_2\\cos(\\phi_1-\\phi_2)+(\\sqrt{c}_1-\\sqrt{c}_2)^2\\cosh(\\sqrt{c}_1\\xi_1+\\sqrt{c}_2\\xi_2)+(\\sqrt{c}_1+\\sqrt{c}_2)^2 \\sigma \\cosh(\\sqrt{c}_1\\xi_1-\\sqrt{c}_2\\xi_2)\\right)} $$"}
             </Latex>
         </center>
         <p>
@@ -91,7 +91,7 @@ const ComplexmKdVII = () => {
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r3_dphi06_merge.gif')} alt=''>
+            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r3_dphi06_merge.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -100,13 +100,13 @@ const ComplexmKdVII = () => {
         <center><p>
         <p>(Click <a href={sasa_satsuma_spacetime_r3_dphi06_merge} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
-       
+        <br/>
         <center><h3>
         Sasa-Satsuma bounce-exchange interaction 
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r3_dphi035_bounce.gif')} alt=''>
+            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r3_dphi035_bounce.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -115,13 +115,13 @@ const ComplexmKdVII = () => {
         <center><p>
         <p>(Click <a href={sasa_satsuma_spacetime_r3_dphi035_bounce} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
-
+        <br/>
         <center><h3>
         Sasa-Satsuma critical-phase interaction 
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r3_dphi070316_critical.gif')} alt=''>
+            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r3_dphi070316_critical.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -130,13 +130,13 @@ const ComplexmKdVII = () => {
         <center><p>
         <p>(Click <a href={sasa_satsuma_spacetime_r3_dphi070316_critical} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
-
+        <br/>
         <center><h3>
         Sasa-Satsuma absorb-emit interaction 
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r3_dphi085_absorb.gif')} alt=''>
+            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r3_dphi085_absorb.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -145,13 +145,13 @@ const ComplexmKdVII = () => {
         <center><p>
         <p>(Click <a href={sasa_satsuma_spacetime_r3_dphi085_absorb} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
-
+        <br/>
         <center><h3>
         Sasa-Satsuma merge-split interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r50_dphi035_merge.gif')} alt=''>
+            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r50_dphi035_merge.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -160,13 +160,13 @@ const ComplexmKdVII = () => {
         <center><p>
         <p>(Click <a href={sasa_satsuma_spacetime_r50_dphi035_merge} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
-
+        <br/>
         <center><h3>
         Sasa-Satsuma critical-phase interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r50_dphi06273_critical.gif')} alt=''>
+            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r50_dphi06273_critical.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -175,13 +175,13 @@ const ComplexmKdVII = () => {
         <center><p>
         <p>(Click <a href={sasa_satsuma_spacetime_r50_dphi06273_critical} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
-
+        <br/>
         <center><h3>
         Sasa-Satsuma absorb-emit interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r50_dphi085_absorb.gif')} alt=''>
+            <img src={require('./Gifs/Complex2/sasa_satsuma_overlay_r50_dphi085_absorb.gif')} alt=''className='image'>
             </img>
         </p>
         </center>

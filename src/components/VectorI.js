@@ -10,7 +10,7 @@ const VectorI = () => {
       <div className="VectorI-container">
   
         <center><h1>Vector-MKdV Solitons I</h1></center>
-        <hr/><h2>Vector MKdV Equation <Latex>{"$$ u_t + 24|u|^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
+        <hr color='red'/><h2>Vector MKdV Equation <Latex>{"$$ u_t + 24|u|^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr color='red'/>
         <p>
         In vector notation, <Latex>{"$$u = (u_1,...,u_N)$$"}</Latex> is 
         a <Latex>{"$$N$$"}</Latex>-component variable satisfying the vector MKdV equation
@@ -43,7 +43,7 @@ const VectorI = () => {
          and <Latex>{"$$ \\xi = x - ct $$"}</Latex> is a moving coordinate.
         </p>
         
-        <hr/><h3>2-Soliton Solution</h3><hr/>
+        <hr/><h2>2-Soliton Solution</h2><hr/>
         <p>
         Collisions where a fast travelling wave with speed <Latex>{" $$ c_1 $$"}</Latex> 
         and orientation (unit vector) <Latex>{" $$ \\bm{\\phi}_1 $$"}</Latex> overtakes a 
@@ -72,9 +72,9 @@ const VectorI = () => {
         where <Latex>{" $$ \\xi_1 = x - c_1 t $$"}</Latex>, <Latex>{"$$ \\xi_2 = x - c_2 t $$"}</Latex> are moving coordinates.
         </p>
 
-        <hr/><h3>
+        <hr/><h2>
         Interaction Properties
-        </h3><hr/>
+        </h2><hr/>
         <p>
         Depending on their speed ratio <Latex>{" $$ \\frac{c_1}{c_2} $$"}</Latex> and relative orientation 
         angle <Latex>{" $$ \\Delta \\bm{\\phi} = \\arccos(\\bm{\\phi}_1 \\cdot \\bm{\\phi}_2) $$"}</Latex>, 
@@ -110,16 +110,16 @@ const VectorI = () => {
         <p>
         where these position shifts depend only on the speeds of the waves but not on their orientations.
         </p>
-        <hr/><h3>
+        <hr/><h2>
        Overlay of 1-Soliton Solutions and Corresponding 2-Soliton Solution
-       </h3><hr/>
+       </h2><hr/>
         
         <center><h3>
         Merge-Split Interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Vector1/hirota_3d_r28_dphi075_merge.gif')} alt=''>
+            <img src={require('./Gifs/Vector1/hirota_3d_r28_dphi075_merge.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -127,31 +127,31 @@ const VectorI = () => {
         <center><p>relative orientation angle: <Latex>{"$$ \\Delta \\bm{\\phi} = 0.75\\pi$$"}</Latex></p></center>
         <center>
           <p>
-            <img src={require('./Gifs/Vector1/hirota_3d_r50_dphi03_merge.gif')} alt=''>
+            <img src={require('./Gifs/Vector1/hirota_3d_r50_dphi03_merge.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
         <center><p>speed ratio: <Latex>{"$$ \\frac{c_1}{c_2} = 50$$"}</Latex></p></center>
         <center><p>relative orientation angle: <Latex>{"$$ \\Delta \\bm{\\phi} = 0.3\\pi$$"}</Latex></p></center>
-
+        <br/>
         <center><h3>
         Bounce-Exchange Interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Vector1/hirota_3d_r28_dphi03_bounce.gif')} alt=''>
+            <img src={require('./Gifs/Vector1/hirota_3d_r28_dphi03_bounce.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
         <center><p>speed ratio: <Latex>{"$$ \\frac{c_1}{c_2} = 2.8$$"}</Latex></p></center>
         <center><p>relative orientation angle: <Latex>{"$$ \\Delta \\bm{\\phi} = 0.3\\pi$$"}</Latex></p></center>
-
+        <br/>
         <center><h3>
         Hirota absorb-emit interaction 
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Vector1/hirota_3d_r28_dphi095_absorb.gif')} alt=''>
+            <img src={require('./Gifs/Vector1/hirota_3d_r28_dphi095_absorb.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -159,7 +159,7 @@ const VectorI = () => {
         <center><p>relative orientation angle: <Latex>{"$$ \\Delta \\bm{\\phi} = 0.95\\pi$$"}</Latex></p></center>
         <center>
           <p>
-            <img src={require('./Gifs/Vector1/hirota_3d_r50_dphi075_absorb.gif')} alt=''>
+            <img src={require('./Gifs/Vector1/hirota_3d_r50_dphi075_absorb.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -167,7 +167,7 @@ const VectorI = () => {
         <center><p>relative orientation angle: <Latex>{"$$ \\Delta \\bm{\\phi} = 0.75\\pi$$"}</Latex></p></center>
         <center>
           <p>
-            <img src={require('./Gifs/Vector1/hirota_3d_opposite.gif')} alt=''>
+            <img src={require('./Gifs/Vector1/hirota_3d_opposite.gif')} alt=''className='image'>
             </img>
         </p>
         </center>

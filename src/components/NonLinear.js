@@ -18,7 +18,7 @@ return (
             (decaying in time and space) or, in some cases, stable traveling wave solutions.
             </p>
 
-            <hr/><hr/><h2>The Convective Wave Equation</h2><hr/><hr/>
+            <hr color='red'/><h2>The Convective Wave Equation</h2><hr color='red'/>
          <p>
              The general form of the convective wave equation is <Latex>{"$$ u_t + c(u)u_x = 0 $$"}</Latex> where <Latex>{"$$ c'(u)$$"}</Latex> 
              is the wave speed given by a function of the wave amplitude u. 
@@ -36,7 +36,7 @@ return (
         </p>
         <center><Latex>{"$$ u(x, 0) = sech^2(x) $$"}</Latex></center>
         <center><p>
-            <img src={require('././Gifs/Nl_eq/convective-2-soln.gif')} alt='convective-2-soln.gif'></img>
+            <img src={require('././Gifs/Nl_eq/convective-2-soln.gif')} alt='convective-2-soln.gif'className='image'></img>
         </p></center>
         <p>
              Naturally the question arises, how can this wave equation 
@@ -44,7 +44,7 @@ return (
              Stable traveling waves with localized profiles 
              (having rapid spatial decay) are called solitary waves.
         </p>
-        <hr/><h2>The Dispersive Wave Equation</h2><hr/>
+        <hr color='red'/><h2>The Dispersive Wave Equation</h2><hr color='red'/>
         <p>
             Can dispersion balance nonlinearity? The simplest dispersive wave equation is
         </p>
@@ -60,9 +60,9 @@ return (
             </p>
         <center><Latex>{"$$ u(x, 0) = sech^2(x) $$"}</Latex></center>
         <center><p>
-            <img src={require('./Gifs/Nl_eq/dispersive-soln.gif')} alt='dispersive-soln.gif'></img>
+            <img src={require('./Gifs/Nl_eq/dispersive-soln.gif')} alt='dispersive-soln.gif'className='image'></img>
         </p></center>
-        <hr/><h2>Nonlinearity and Dispersion</h2><hr/>
+        <hr color='red'/><h2>Nonlinearity and Dispersion</h2><hr color='red'/>
         <p>
             The physical feature of balancing dispersion against nonlinearity leads to solitary wave solutions. 
             Adding the dispersive term to term <Latex>{"$$ u_{xxx} $$"}</Latex> 
@@ -88,13 +88,13 @@ return (
         </p>
 
         <center><p>
-            <img src={require('./Gifs/Nl_eq/gKdV-compare-p.gif')} alt='gKdV-compare-p.gif'></img>
+            <img src={require('./Gifs/Nl_eq/gKdV-compare-p.gif')} alt='gKdV-compare-p.gif'className='image'></img>
         </p></center>
         <p>
             Waves of the same height (but different speeds) have a steeper and narrower profile.
         </p>
         <center><p>
-            <img src={require('./Gifs/Nl_eq/gKdV-compare-c.gif')} alt='gKdV-compare-c.gif'></img>
+            <img src={require('./Gifs/Nl_eq/gKdV-compare-c.gif')} alt='gKdV-compare-c.gif'className='image'></img>
         </p></center>
 
         <NavLinks prePage="/" nextPage="/Interactions" prePageName="Index" nextPageName='Interactions of Nonlinear Dispersive Waves'/>

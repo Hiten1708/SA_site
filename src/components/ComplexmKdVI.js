@@ -16,7 +16,7 @@ const ComplexmKdVI = () => {
     return (
       <div className="CmKdVI-container">
         <center><h1>Hirota Solitons</h1></center>
-        <hr/><h2>Hirota-mKdV Equation <Latex>{"$$ u_t + 24|u|^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
+        <hr color='red'/><h2>Hirota-mKdV Equation <Latex>{"$$ u_t + 24|u|^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr color='red'/>
         <p>
         There are two equivalent forms for the Hirota-mKdV equation:
         </p>
@@ -39,7 +39,7 @@ const ComplexmKdVI = () => {
         </p>
         <center>
           <p>
-            <img src={require('./Gifs/Complex1/hirota_2d_1_soliton.gif')} alt=''>
+            <img src={require('./Gifs/Complex1/hirota_2d_1_soliton.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -58,16 +58,16 @@ const ComplexmKdVI = () => {
         <p>
         where <Latex>{" $$ \\xi_1 = x - c_1 t $$"}</Latex>, <Latex>{"$$ \\xi_2 = x - c_2 t $$"}</Latex> are moving coordinates.
         </p>
-       <h3>
+       <hr/><h3>
        Overlay of Travelling-Wave Solutions and Corresponding Collision Solution
-       </h3>
+       </h3><hr/>
         
         <center><h3>
         Hirota merge-split interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex1/hirota_overlay_r28_dphi075_merge.gif')} alt=''>
+            <img src={require('./Gifs/Complex1/hirota_overlay_r28_dphi075_merge.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -76,12 +76,13 @@ const ComplexmKdVI = () => {
         <center><p>
         <p>(Click <a href={hirota_spacetime_r28_dphi075_merge} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
+        <br/>
         <center><h3>
         Hirota bounce-exchange interaction 
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex1/hirota_overlay_r28_dphi03_bounce.gif')} alt=''>
+            <img src={require('./Gifs/Complex1/hirota_overlay_r28_dphi03_bounce.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -90,12 +91,13 @@ const ComplexmKdVI = () => {
         <center><p>
         <p>(Click <a href={hirota_spacetime_r28_dphi03_bounce} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
+        <br/>
         <center><h3>
         Hirota critical-phase interaction 
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex1/hirota_overlay_r28_dphi08689_critical.gif')} alt=''>
+            <img src={require('./Gifs/Complex1/hirota_overlay_r28_dphi08689_critical.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -104,12 +106,13 @@ const ComplexmKdVI = () => {
         <center><p>
         <p>(Click <a href={hirota_spacetime_r28_dphi08689_critical} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
+        <br/>
         <center><h3>
         Hirota absorb-emit interaction 
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex1/hirota_overlay_r28_dphi095_absorb.gif')} alt=''>
+            <img src={require('./Gifs/Complex1/hirota_overlay_r28_dphi095_absorb.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -118,12 +121,13 @@ const ComplexmKdVI = () => {
         <center><p>
         <p>(Click <a href={hirota_spacetime_r28_dphi095_absorb} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
+        <br/>
         <center><h3>
         Hirota merge-split interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex1/hirota_overlay_r50_dphi03_merge.gif')} alt=''>
+            <img src={require('./Gifs/Complex1/hirota_overlay_r50_dphi03_merge.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -132,12 +136,13 @@ const ComplexmKdVI = () => {
         <center><p>
         <p>(Click <a href={hirota_spacetime_r50_dphi03_merge} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
+        <br/>
         <center><h3>
         Hirota critical-phase interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex1/hirota_overlay_r50_dphi0637_critical.gif')} alt=''>
+            <img src={require('./Gifs/Complex1/hirota_overlay_r50_dphi0637_critical.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -146,12 +151,13 @@ const ComplexmKdVI = () => {
         <center><p>
         <p>(Click <a href={hirota_spacetime_r50_dphi0637_critical} target="_blank" rel="noopener noreferrer">here</a> to see the space time portrait)</p>
         </p></center>
+        <br/>
         <center><h3>
         Hirota absorb-emit interaction
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/Complex1/hirota_overlay_r50_dphi075_absorb.gif')} alt=''>
+            <img src={require('./Gifs/Complex1/hirota_overlay_r50_dphi075_absorb.gif')} alt=''className='image'>
             </img>
         </p>
         </center>

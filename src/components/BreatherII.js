@@ -11,21 +11,22 @@ const BreatherII = () => {
         
         <center><h1>Oscillatory Solitons</h1></center>
         
-        <hr/><h2>Sasa-Satsuma-mKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
-        
+        <hr color='red'/><h2>Sasa-Satsuma-mKdV Equation <Latex>{"$$ u_t + 12|u|(|u|u)_x + u_{xxx} = 0 $$"}</Latex></h2><hr color='red'/>
         
         <hr/><h2>Breather - Soliton</h2><hr/>
+        <br/>
         <hr/><h3>Right-Breather</h3><hr/>
+        <br/>
         <center>
           <p>
-            <img src={require('./Gifs/Breather2/ss-right-breather-anim.gif')} alt=''>
+            <img src={require('./Gifs/Breather2/ss-right-breather-anim.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
         <hr/><h3>Oscillatory-Right-Breather</h3><hr/>
         <center>
           <p>
-            <img src={require('./Gifs/Breather2/ss-oscil-right-breather-anim.gif')} alt=''>
+            <img src={require('./Gifs/Breather2/ss-oscil-right-breather-anim.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -35,7 +36,7 @@ const BreatherII = () => {
        </h3><hr/>
        <center>
           <p>
-            <img src={require('./Gifs/Breather2/ss-stationary-breather-anim.gif')} alt=''>
+            <img src={require('./Gifs/Breather2/ss-stationary-breather-anim.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -45,7 +46,7 @@ const BreatherII = () => {
         </h3><hr/>
         <center>
           <p>
-            <img src={require('./Gifs/Breather2/ss-oscil-stationary-breather-anim.gif')} alt=''>
+            <img src={require('./Gifs/Breather2/ss-oscil-stationary-breather-anim.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -54,7 +55,7 @@ const BreatherII = () => {
         </h3><hr/>
         <center>
           <p>
-            <img src={require('./Gifs/Breather2/ss-left-breather-anim.gif')} alt=''>
+            <img src={require('./Gifs/Breather2/ss-left-breather-anim.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -63,7 +64,7 @@ const BreatherII = () => {
         </h3><hr/>
         <center>
           <p>
-            <img src={require('./Gifs/Breather2/ss-oscil-left-breather-anim.gif')} alt=''>
+            <img src={require('./Gifs/Breather2/ss-oscil-left-breather-anim.gif')} alt=''className='image'>
             </img>
         </p>
         </center>

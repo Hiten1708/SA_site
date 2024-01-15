@@ -14,7 +14,7 @@ const MKdVsolitons = () => {
         
         <center><h1>mKdV Solitons</h1></center>
         
-        <hr/><h2>Modified KdV Equation <Latex>{"$$ u_t + 24u^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr/>
+        <hr color='red'/><h2>Modified KdV Equation <Latex>{"$$ u_t + 24u^2u_x + u_{xxx} = 0 $$"}</Latex></h2><hr color='red'/>
         <p>
         Travelling wave solutions of the general mKdV equation 
         <Latex>{"$$ u_t + \\alpha u^2u_x + \\beta u_{xxx} = 0 $$"}</Latex> are non-singular 
@@ -44,26 +44,26 @@ const MKdVsolitons = () => {
         </p>
         <center>
           <p>
-            <img src={require('./Gifs/mKdVsolitons/mkdv_1soliton_up.gif')} alt=''>
+            <img src={require('./Gifs/mKdVsolitons/mkdv_1soliton_up.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
         <center>
           <p>
-            <img src={require('./Gifs/mKdVsolitons/mkdv_1soliton_down.gif')} alt=''>
+            <img src={require('./Gifs/mKdVsolitons/mkdv_1soliton_down.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
         <p>
         The position of the wave peak at time <Latex>{"$$t$$"}</Latex> is <Latex>{"$$x = ct$$"}</Latex>.
         </p>
-        <h3>2-Soliton Solution</h3>
+        <hr/><h2>2-Soliton Solution</h2><hr/>
         <p>
         The mKdV 2-soliton solution is
         </p>
         <center>
             <Latex>
-                {"$$u(x,t) = \\frac{(c_1-c_2)(s_1\\sqrt{c_1}\\cosh(\\sqrt{c_2}\\xi_2) + s_2c_2\\sinh(\\sqrt{c_1}\\xi_1))}{4s_1s_2\\sqrt{c_1}\\sqrt{c_2}+(\\sqrt{c_1}-\\sqrt{c_2})^2cosh(\\sqrt{c_1}\\xi_1 + \\sqrt{c_2}\\xi_2) + (\\sqrt{c_1} + \\sqrt{c_2})^2\\cosh(\\sqrt{c_1}\\xi_1 - \\sqrt{c_2}\\xi_2)}$$"}
+                {"$$u(x,t) = \\frac{(c_1-c_2)(s_1\\sqrt{c_1}\\cosh(\\sqrt{c_2}\\xi_2) + s_2\\sqrt{c_2}\\sinh(\\sqrt{c_1}\\xi_1))}{4s_1s_2\\sqrt{c_1}\\sqrt{c_2}+(\\sqrt{c_1}-\\sqrt{c_2})^2cosh(\\sqrt{c_1}\\xi_1 + \\sqrt{c_2}\\xi_2) + (\\sqrt{c_1} + \\sqrt{c_2})^2\\cosh(\\sqrt{c_1}\\xi_1 - \\sqrt{c_2}\\xi_2)}$$"}
             </Latex>
         </center>
         <p>
@@ -92,7 +92,7 @@ const MKdVsolitons = () => {
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/mKdVsolitons/2D_merge.gif')} alt=''>
+            <img src={require('./Gifs/mKdVsolitons/2D_merge.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -111,7 +111,7 @@ const MKdVsolitons = () => {
         </h3></center>
         <center>
           <p>
-            <img src={require('./Gifs/mKdVsolitons/2D_bounce.gif')} alt=''>
+            <img src={require('./Gifs/mKdVsolitons/2D_bounce.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -131,7 +131,7 @@ const MKdVsolitons = () => {
         </p></center>
         <center>
           <p>
-            <img src={require('./Gifs/mKdVsolitons/2D_psipi.gif')} alt=''>
+            <img src={require('./Gifs/mKdVsolitons/2D_psipi.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
@@ -143,21 +143,21 @@ const MKdVsolitons = () => {
         </h3><hr/>
         <center>
           <p>
-            <img src={require('./Gifs/mKdVsolitons/2D_overlay_merge.gif')} alt=''>
+            <img src={require('./Gifs/mKdVsolitons/2D_overlay_merge.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
         <center><p>ratio of fast to slow wave speeds is <Latex>{"$$ > \\frac{7+3\\sqrt{5}}{2} \\cong 6.85$$"}</Latex></p></center>
         <center>
           <p>
-            <img src={require('./Gifs/mKdVsolitons/2D_overlay_bounce.gif')} alt=''>
+            <img src={require('./Gifs/mKdVsolitons/2D_overlay_bounce.gif')} alt=''className='image'>
             </img>
         </p>
         </center>
         <center><p>ratio of fast to slow wave speeds is <Latex>{"$$ < \\frac{7+3\\sqrt{5}}{2} \\cong 6.85$$"}</Latex></p></center>
         <center>
           <p>
-            <img src={require('./Gifs/mKdVsolitons/2D_overlay_psipi.gif')} alt=''>
+            <img src={require('./Gifs/mKdVsolitons/2D_overlay_psipi.gif')} alt='' className='image'>
             </img>
         </p>
         </center>

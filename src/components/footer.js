@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div>
-        <p>Brock University</p>
+        <p><a href='https://brocku.ca/'>Brock University</a></p>
         <p>St. Catharines, Ontario</p>
       </div>
       <div>
@@ -15,7 +15,7 @@ const Footer = () => {
         <p>Mark R. Willoughby</p>
       </div>
       <div>
-        <p>&copy; 2023, <a href="https://brocku.ca/about/site-policies/">Site Policies</a></p>
+        <p>&copy; 2024, <a href="https://brocku.ca/about/site-policies/">Site Policies</a></p>
         <p className='canada-flag'><img src={flag} alt='Canada flag' className='canada-flag-img'/></p>
       </div>
     </footer>

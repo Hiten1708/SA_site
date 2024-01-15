@@ -17,19 +17,17 @@ const NavLinks = ({ prePage, nextPage, prePageName, nextPageName }) => {
   return (
     <div className='navLinks-component'>
       <div className='navLink-left'>
-        {prePage ? (
+        {prePage && (
           <span>
             Previous: <NavLink to={prePage} activeClassName="active" onClick={handleNavLinkClick}>{prePageName}</NavLink>
           </span>
-        ) : (
-          <span style={{ color: '#f8f9fa' }}>Previous page: {prePageName}</span>
         )}
       </div>
       <div className='navLink-center'>
         {/* Update: Removed incorrect usage of navigate */}
         <NavLink to="#" onClick={() => navigate(-1)} activeClassName="active">Back</NavLink>
-        <button onClick={scrollToTop} >↑ Top</button>
-        <NavLink to="/" onClick={handleNavLinkClick} activeClassName="active">⌂ Home</NavLink>
+        |<button onClick={scrollToTop} >↑ Top</button>
+        |<NavLink to="/" onClick={handleNavLinkClick} activeClassName="active">⌂ Home</NavLink>
       </div>
       <div className='navLink-right'>
         {nextPage && (
